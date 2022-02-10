@@ -309,6 +309,10 @@ footer img {
 
     /* Estilos Main - Ajuste de ancho de contenido */
 
+    .titulo-tarjeta-receta {
+        font-size: 1.3rem;
+    }
+
     .seccion-principal-contenido {
         display: flex;
     }    
@@ -334,4 +338,10 @@ footer img {
     }
 
     /* Fin Estilos Footer */
+}
+
+@media (min-width: 1050px) {
+    .titulo-tarjeta-receta {
+        font-size: 2rem;
+    }
 }

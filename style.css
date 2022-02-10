@@ -82,7 +82,7 @@ header .logo-container h2 {
     width: 30%;
     top: 46px;
     right: 0;
-    display: flex;
+    display: none;
     margin-right: -30%;
     transition: all 0.5s;
 }
@@ -117,6 +117,7 @@ header .logo-container h2 {
 }
 
 #btn-menu:checked ~ .main-nav {
+    display: flex;
     margin: 0;
 }
 
@@ -259,6 +260,10 @@ footer img {
     form {
         width: 60%;
     }
+
+    .main-nav {
+        display: flex;
+    }
 }
 
 /* Pantallas de mas de 720px */
@@ -272,6 +277,7 @@ footer img {
     }
 
     .main-nav {
+        display: flex;
         position: static;
         justify-content: flex-end;
         width: fit-content;

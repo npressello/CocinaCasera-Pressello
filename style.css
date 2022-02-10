@@ -83,8 +83,6 @@ header .logo-container h2 {
     top: 46px;
     right: 0;
     display: none;
-    margin-right: -30%;
-    transition: all 0.5s;
 }
 
 .main-nav ul {
@@ -118,7 +116,6 @@ header .logo-container h2 {
 
 #btn-menu:checked ~ .main-nav {
     display: flex;
-    margin: 0;
 }
 
 header #menu-label {
@@ -173,6 +170,17 @@ p {
     border: 1px solid gray;
 }
 
+.tarjeta {
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+}
+
 .nav-recetas ul {
     display: flex;
     justify-content: center;
@@ -202,6 +210,7 @@ p {
     background-color: var(--main-color-background);
     color: var(--main-text-color);    
     text-decoration: none;
+    border-radius: 0.35em;
 }
 
 iframe {

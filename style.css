@@ -50,20 +50,40 @@ ul, ol {
 
 /* Estilos Header y footer */
 
-header, footer {
+header {
+    background-color: var(--main-color-background);
+    color: var(--main-text-color);
+}
+
+.navbar {
+    padding: 0;
+    margin: 5px;
+}
+
+.logo-div {
+    display: flex;    
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: initial;
+    align-items: center;
+}
+
+.navbar h2 {
+    margin: auto;
+}
+
+footer {
+    background-color: var(--main-color-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 5px;
-    background-color: var(--main-color-background);
 }
 
-.logo-container {
-    display: flex;
-}
-
-header .logo-container a img, footer img {
+header nav a img, footer img {
     width: 32px;
 }
 
@@ -73,63 +93,6 @@ header .logo-container h2 {
     margin: auto 10px;
     font-size: 100%;
     font-weight: 800;
-}
-
-/* La barra de navegacion se esconde en pantallas chicas*/
-.main-nav {
-    background-color: var(--main-color-background);
-    position: absolute;
-    width: 30%;
-    top: 46px;
-    right: 0;
-    display: none;
-}
-
-.main-nav ul {
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-.main-nav li {
-    padding: 8px;
-    border-top: 1px solid #fff;
-    transition: all 0.3s;
-}
-
-.main-nav li:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);    
-}
-
-.main-nav li a {
-    color: var(--main-text-color);
-    display: block;
-    margin: auto;
-    text-decoration: none;
-}
-
-/* El boton y label de menu activan el nav desplegable. Se esconden en pantallas grandes */
-#btn-menu {
-    display: none;
-}
-
-#btn-menu:checked ~ .main-nav {
-    display: flex;
-}
-
-header #menu-label {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    padding: 5px;
-    border-left: 1px solid #fff;
-}
-
-header label:hover, .btn-pagina:hover {
-    cursor: pointer;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 /* Fin Estilos Header y footer */
@@ -279,35 +242,6 @@ footer img {
 /* Pantallas de mas de 720px */
 
 @media (min-width: 720px) {
-
-    /* Estilos Header - Barra de navegacion completa */
-
-    header #menu-label {
-        display: none;
-    }
-
-    .main-nav {
-        display: flex;
-        position: static;
-        justify-content: flex-end;
-        width: fit-content;
-        margin: 0;
-    }
-    
-    .main-nav ul {
-        display: flex;
-        flex-direction: row;
-        margin-left: auto;
-    }
-    
-    .main-nav li {
-        text-align: right;
-        border-top: none;
-        border-left: 1px solid #fff;
-    }
-
-    /* Fin Estilos Header - Barra de navegacion completa */
-
     /* Estilos Main - Ajuste de ancho de contenido */
 
     .titulo-tarjeta-receta {
@@ -339,6 +273,13 @@ footer img {
     }
 
     /* Fin Estilos Footer */
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 
 @media (min-width: 1050px) {

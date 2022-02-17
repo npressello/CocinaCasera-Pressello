@@ -145,18 +145,6 @@ p {
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
 }
 
-.nav-recetas ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    list-style: none;
-}
-
-.nav-recetas ul li {
-    margin: auto 5px;
-    padding: 10px;
-}
-
 .descripcion-receta, .seccion-ingredientes, .informacion-receta {
     line-height: 1.6;
 }
@@ -192,6 +180,7 @@ form {
     display: flex;
     flex-direction: column;
     width: 80%;
+    max-width: 100%;
 }
 
 form input, form textarea {

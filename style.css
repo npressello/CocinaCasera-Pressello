@@ -169,6 +169,7 @@ iframe {
     width: 90%;
     height: 400px;
     margin: 10px;
+    max-width: 100%;
 }
 
 .formulario {

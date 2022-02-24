@@ -1,0 +1,38 @@
+/* Estilos Header y footer */
+
+header {
+    background-color: var(--main-color-background);
+    color: var(--main-text-color);
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 0;
+    margin: 5px;
+
+    .logo-div {
+        display: flex; 
+
+        .navbar-brand {
+            .logo-img {
+                width: 32px;
+            }
+        }
+
+        .logo-titulo {
+            margin: auto;
+            color: white;
+        }
+    }
+    
+    .navbar-collapse {
+        flex-basis: 100%;
+        flex-grow: initial;
+        align-items: center;
+
+        .nav-item:hover {
+            background-color: var(--main-color-background-light);
+            border-radius: 0.3rem;
+        }
+    }
+}

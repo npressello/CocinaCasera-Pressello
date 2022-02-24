@@ -1,93 +1,16 @@
 /* Estilos generales */
 /* Se utiliza un enfoque mobile-first */
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-:root {
-    --main-color-background: #229FB5;
-    --main-color-background-light: #30b2c9;
-    --main-text-color: #f5ebeb;
-    --header-height: 40px
-}
-
-img {
-    width: 100%;
-}
-
-ul, ol {
-    list-style-position: inside;
-    padding: 0;
-}
-
+@import 'base/reset';
+@import 'base/variables';
+@import 'base/typography';
 /* Fin estilos generales */
 
 /* GRID principal */
-
-.page-wrapper {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "banner"
-    "main"
-    "footer";
-}
-
-header {
-    grid-area: header;
-}
-
-.banner-principal {
-    grid-area: banner;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
-}
-
+@import 'components/layout';
 /*  Fin GRID principal */
 
 /* Estilos Header y footer */
-
-header {
-    background-color: var(--main-color-background);
-    color: var(--main-text-color);
-    box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-    padding: 0;
-    margin: 5px;
-}
-
-.navbar h2 {
-    margin: auto;
-}
-
-.logo-div {
-    display: flex;    
-}
-
-.navbar-collapse {
-    flex-basis: 100%;
-    flex-grow: initial;
-    align-items: center;
-}
-
-.nav-item:hover {
-    background-color: var(--main-color-background-light);
-    border-radius: 0.3rem;
-}
+@import 'components/header';
 
 footer {
     background-color: var(--main-color-background);
@@ -99,12 +22,8 @@ footer {
     margin-top: 50px;
 }
 
-header nav a img, footer img {
+footer img {
     width: 32px;
-}
-
-.logo-titulo {
-    color: white;
 }
 
 /* Fin Estilos Header y footer */

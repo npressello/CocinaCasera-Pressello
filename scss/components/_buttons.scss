@@ -1,0 +1,12 @@
+.btn-pagina {
+    padding: 10px;
+    background-color: var(--main-color-background);
+    color: var(--main-text-color);    
+    text-decoration: none;
+    border-radius: 0.35em;
+
+    &:hover {
+        background-color: var(--main-color-background-light);
+        color: var(--main-text-color);  
+    }
+}

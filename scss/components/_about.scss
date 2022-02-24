@@ -1,0 +1,30 @@
+iframe {
+    width: 90%;
+    height: 400px;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.formulario {
+    margin: 20px;
+    form {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        max-width: 100%;
+
+        input, textarea {
+            margin-top: 20px;
+        }
+
+        @media (min-width: 600px) {
+            width: 400px;
+        }
+    }
+}
+
+
+
+
+

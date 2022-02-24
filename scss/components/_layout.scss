@@ -5,20 +5,20 @@
     "banner"
     "main"
     "footer";
-}
 
-header {
-    grid-area: header;
-}
+    header {
+        grid-area: header;
+    }
 
-.banner-principal {
-    grid-area: banner;
-}
-
-main {
-    grid-area: main;
-}
-
-footer {
-    grid-area: footer;
+    .banner-principal {
+        grid-area: banner;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
 }

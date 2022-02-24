@@ -1,0 +1,39 @@
+.seccion-tercio {
+    width: 90%;
+    padding: 2%;
+    margin: 10px auto;
+    border: 1px solid gray;
+
+    .texto-descripcion-receta {
+        margin: 20px auto;
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 30%;
+    }
+}
+
+.seccion-ingredientes {
+    line-height: 1.6;
+    text-align: left;
+
+    ul {
+        margin: 10px 5px;
+    }
+}
+
+.seccion-mitad {
+    width: 90%;
+    padding: 2%;
+    margin: 10px auto;
+    border: 1px solid gray;
+
+    .descripcion-receta {
+        line-height: 1.6;
+        text-align: left;
+    }
+
+    @media screen and (min-width: 600px) {
+        width: 40%;
+    }
+}

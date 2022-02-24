@@ -1,0 +1,33 @@
+footer {
+    background-color: var(--main-color-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+
+    p {
+        color: var(--main-text-color);
+        font-size: 80%;
+        margin: auto 0 auto 5%;
+
+        @media screen and (min-width: 600px) {
+            margin-left: 25%;
+        }
+    }
+
+    .iconos-sociales {
+        display: flex;
+
+        a {
+            margin: 10px;
+
+            img {
+                width: 24px;
+            }
+        }
+    }
+}
+
+

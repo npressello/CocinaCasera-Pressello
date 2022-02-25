@@ -1,0 +1,53 @@
+/* Estilos Banner Principal */
+
+.banner-principal {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Fin Estilos Banner Principal */
+
+/* Estilos Main Generales */
+
+main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.02);
+    border-radius: 0.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+
+    @media screen and (min-width: 600px) {
+        .seccion-principal-contenido {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: left;
+        }    
+    }
+
+    @media screen and (min-width: 992px) {
+        width: 70%;
+        margin: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 80%;
+    }
+
+    @media screen and (min-width: 1400px) {
+        width: 70%;
+    }
+    
+    @media screen and (min-width: 1600px) {
+        width: 60%;
+    }
+}
+
+
+
+
+/* Fin Estilos Main Generales */

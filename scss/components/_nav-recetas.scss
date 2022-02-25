@@ -1,0 +1,44 @@
+/* Estilos de la barra de navegacion secundaria */
+/* En pantalla chica se muestra antes que las tarjetas */
+/* En pantalla grande se muestra a la derecha de las tarjetas */
+
+.nav-tipo-recetas {    
+    order: -1;    
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+
+        li {
+            a {
+            text-decoration: none;
+            color: black;
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+    
+                p {
+                    display: inline-block;
+                    margin-top: 5px;
+                    font-size: 0.7rem;
+    
+                    @media screen and (min-width: 600px) {
+                        font-size: 0.9rem; 
+                    }
+                }
+            }
+        }
+
+        @media screen and (min-width: 992px) {
+            flex-direction: column;
+            margin: 10px auto;
+        }
+    }    
+
+    @media screen and (min-width: 992px) {
+        order: 1;
+    }
+}

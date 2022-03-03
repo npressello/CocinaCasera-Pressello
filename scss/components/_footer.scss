@@ -1,14 +1,13 @@
 footer {
-    background-color: var(--main-color-background);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @extend %flex-row;
+    @extend %brand-color-primary;
     width: 100%;
     padding: 0;
     margin-top: 50px;
+    justify-content: space-between;
+    align-items: center;    
 
     p {
-        color: var(--main-text-color);
         font-size: 80%;
         margin: auto 0 auto 5%;
 
@@ -18,7 +17,7 @@ footer {
     }
 
     .iconos-sociales {
-        display: flex;
+        @extend %flex-row;
 
         a {
             margin: 10px;

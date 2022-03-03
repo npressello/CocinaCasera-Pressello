@@ -11,8 +11,7 @@
 /* Estilos Main Generales */
 
 main {
-    display: flex;
-    flex-direction: column;
+    @extend %flex-column;
     text-align: center;
     width: 100%;
     padding: 10px;

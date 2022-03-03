@@ -1,24 +1,23 @@
 header {
-    background-color: var(--main-color-background);
-    color: var(--main-text-color);
+    @extend %brand-color-primary;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
 
     .navbar {
-        padding: 0;
         margin: 5px;
+        padding: 0;        
     
         .logo-div {
-            display: flex; 
+            @extend %flex-row;
     
             .navbar-brand {
                 .logo-img {
-                    width: 32px;
+                    width: map-get($header, logo-width);
                 }
             }
     
             .logo-titulo {
                 margin: auto;
-                color: white;
+                color: map-get($header, txt-color);
             }
         }
         
@@ -27,7 +26,7 @@ header {
             align-items: center;
     
             .nav-item:hover {
-                background-color: var(--main-color-background-light);
+                background-color: map-get($header, bg-color-sec);
                 border-radius: 0.3rem;
             }
         }

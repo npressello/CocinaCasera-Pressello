@@ -1,0 +1,20 @@
+
+%brand-color-primary {
+    background-color: $bg-color-primary;
+    color: $txt-color-primary;
+}
+
+%brand-color-secondary {
+    background-color: $bg-color-secondary;
+    color: $txt-color-primary;
+}
+
+%flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+%flex-row {
+    display: flex;
+    flex-direction: row;
+}

@@ -102,6 +102,7 @@ header .navbar .navbar-collapse {
   align-items: center;
 }
 header .navbar .navbar-collapse .nav-item:hover {
+  background-color: #30b2c9;
   border-radius: 0.3rem;
 }
 

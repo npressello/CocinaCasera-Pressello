@@ -26,7 +26,7 @@ header {
             align-items: center;
     
             .nav-item:hover {
-                background-color: map-get($header, bg-color-sec);
+                background-color: map-get($header, bg-color-secondary);
                 border-radius: 0.3rem;
             }
         }

@@ -1,12 +1,10 @@
 .btn-pagina {
+    @extend %brand-color-primary;
     padding: 10px;
-    background-color: var(--main-color-background);
-    color: var(--main-text-color);    
-    text-decoration: none;
-    border-radius: 0.35em;
+    border-radius: 0.35em;    
+    text-decoration: none;    
 
     &:hover {
-        background-color: var(--main-color-background-light);
-        color: var(--main-text-color);  
+        @extend %brand-color-secondary;
     }
 }

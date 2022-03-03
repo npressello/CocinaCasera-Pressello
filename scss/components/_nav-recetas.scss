@@ -6,7 +6,7 @@
     order: -1;    
 
     ul {
-        display: flex;
+        @extend %flex-row;
         justify-content: space-around;
         list-style: none;
         padding: 0;

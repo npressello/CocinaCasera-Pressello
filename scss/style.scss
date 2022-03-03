@@ -1,6 +1,10 @@
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/maps';
 @import 'base/reset';
 @import 'base/variables';
 @import 'base/typography';
+@import 'base/extends';
 @import 'components/layout';
 @import 'components/header';
 @import 'components/footer';

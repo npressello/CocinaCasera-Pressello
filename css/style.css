@@ -14,13 +14,6 @@ ul, ol {
   padding: 0;
 }
 
-:root {
-  --main-color-background: #229FB5;
-  --main-color-background-light: #30b2c9;
-  --main-text-color: #f5ebeb;
-  --header-height: 40px ;
-}
-
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -37,6 +30,26 @@ h4 {
   line-height: 1;
   font-size: 1.5rem;
   margin: 20px;
+}
+
+.btn-pagina, footer, header {
+  background-color: #229FB5;
+  color: #f5ebeb;
+}
+
+.btn-pagina:hover {
+  background-color: #30b2c9;
+  color: #f5ebeb;
+}
+
+.tarjeta .cuerpo-tarjeta, .formulario form, main {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarjeta, .nav-tipo-recetas ul, footer .iconos-sociales, footer, header .navbar .logo-div {
+  display: flex;
+  flex-direction: row;
 }
 
 .page-wrapper {
@@ -57,30 +70,24 @@ h4 {
 }
 
 header {
-  background-color: var(--main-color-background);
-  color: var(--main-text-color);
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
 }
 header .navbar {
-  padding: 0;
   margin: 5px;
-}
-header .navbar .logo-div {
-  display: flex;
+  padding: 0;
 }
 header .navbar .logo-div .navbar-brand .logo-img {
   width: 32px;
 }
 header .navbar .logo-div .logo-titulo {
   margin: auto;
-  color: white;
+  color: #f5ebeb;
 }
 header .navbar .navbar-collapse {
   flex-grow: initial;
   align-items: center;
 }
 header .navbar .navbar-collapse .nav-item:hover {
-  background-color: var(--main-color-background-light);
   border-radius: 0.3rem;
 }
 
@@ -91,16 +98,13 @@ header .navbar .navbar-collapse .nav-item:hover {
   }
 }
 footer {
-  background-color: var(--main-color-background);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
   padding: 0;
   margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
 }
 footer p {
-  color: var(--main-text-color);
   font-size: 80%;
   margin: auto 0 auto 5%;
 }
@@ -108,9 +112,6 @@ footer p {
   footer p {
     margin-left: 25%;
   }
-}
-footer .iconos-sociales {
-  display: flex;
 }
 footer .iconos-sociales a {
   margin: 10px;
@@ -129,8 +130,6 @@ footer .iconos-sociales a img {
 /* Fin Estilos Banner Principal */
 /* Estilos Main Generales */
 main {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   width: 100%;
   padding: 10px;
@@ -193,13 +192,13 @@ main {
   margin: 10px auto;
   border: 1px solid gray;
 }
-.seccion-tercio .texto-descripcion-receta {
-  margin: 20px auto;
-}
 @media screen and (min-width: 600px) {
   .seccion-tercio {
     width: 30%;
   }
+}
+.seccion-tercio .texto-descripcion-receta {
+  margin: 20px auto;
 }
 
 .seccion-ingredientes {
@@ -216,32 +215,30 @@ main {
   margin: 10px auto;
   border: 1px solid gray;
 }
-.seccion-mitad .descripcion-receta {
-  line-height: 1.6;
-  text-align: left;
-}
 @media screen and (min-width: 600px) {
   .seccion-mitad {
     width: 40%;
   }
 }
+.seccion-mitad .descripcion-receta {
+  line-height: 1.6;
+  text-align: left;
+}
 
 iframe {
   width: 90%;
+  max-width: 100%;
   height: 400px;
   margin: 10px;
-  max-width: 100%;
 }
 
 .formulario {
   margin: 20px;
 }
 .formulario form {
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
   width: 80%;
   max-width: 100%;
+  margin: 20px auto;
 }
 .formulario form input, .formulario form textarea {
   margin-top: 20px;
@@ -254,16 +251,9 @@ iframe {
 
 .btn-pagina {
   padding: 10px;
-  background-color: var(--main-color-background);
-  color: var(--main-text-color);
-  text-decoration: none;
   border-radius: 0.35em;
+  text-decoration: none;
 }
-.btn-pagina:hover {
-  background-color: var(--main-color-background-light);
-  color: var(--main-text-color);
-}
-
 /* Estilos de la barra de navegacion secundaria */
 /* En pantalla chica se muestra antes que las tarjetas */
 /* En pantalla grande se muestra a la derecha de las tarjetas */
@@ -271,7 +261,6 @@ iframe {
   order: -1;
 }
 .nav-tipo-recetas ul {
-  display: flex;
   justify-content: space-around;
   list-style: none;
   padding: 0;
@@ -311,11 +300,10 @@ iframe {
   height: 180px;
   margin: 10px auto;
   border-radius: 0.5em;
+  border: 1px solid gray;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
-  border: 1px solid gray;
   overflow: hidden;
-  display: flex;
 }
 .tarjeta .imagen-tarjeta {
   width: 30%;
@@ -329,12 +317,10 @@ iframe {
   }
 }
 .tarjeta .cuerpo-tarjeta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   width: 70%;
   margin: 5px auto;
   line-height: 1.4;
+  align-items: center;
 }
 @media screen and (min-width: 600px) {
   .tarjeta .cuerpo-tarjeta {
@@ -352,13 +338,13 @@ iframe {
 .tarjeta .cuerpo-tarjeta .texto-tarjeta {
   display: block;
   display: -webkit-box;
+  width: auto;
+  margin: auto 20px 30px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   max-height: 40px;
   -webkit-line-clamp: 2;
-  width: auto;
-  margin: auto 20px 30px 20px;
   font-size: 0.8rem;
 }
 .tarjeta:hover {
@@ -367,9 +353,9 @@ iframe {
 }
 @media screen and (min-width: 600px) {
   .tarjeta {
+    flex-direction: column;
     width: 280px;
     height: 400px;
-    flex-direction: column;
   }
 }
 

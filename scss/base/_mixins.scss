@@ -1,11 +1,20 @@
 
 @mixin columna-contenido($width) {
     width: 100%;
-    padding: 0;
+    padding: 0.5rem;
     margin: 10px auto;
-    border: 1px solid black;
+    border-top: 1px solid black;    
 
     @media screen and (min-width: 600px) {
         width: $width;
+        padding: 0;
+        border: 1px solid black;
     }
+}
+
+@mixin encabezado($size, $weigth) {
+    font-weight: $weigth;
+    line-height: 1;
+    font-size: $size;
+    margin: 1.5rem;
 }

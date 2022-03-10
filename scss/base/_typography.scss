@@ -5,33 +5,35 @@
 }
 
 .main-titulo {
-    font-weight: 900;
-    line-height: 1;
-    font-size: 2rem;
-    margin: 20px;
+    @include encabezado(2rem, 900);
 }
 
 h2 {
-    font-weight: 800;
-    line-height: 1;
-    font-size: 1.5rem;
-    margin: 1.5rem;
+    @include encabezado(1.5rem, 800);
 }
 
 h3 {
-    font-weight: 700;
-    line-height: 1;
-    font-size: 1.5rem;
-    margin: 1.5rem;
+    @include encabezado(1.5rem, 700);
 }
 
 h4 {
-    font-weight: 600;
-    line-height: 1;
-    font-size: 1.5rem;
-    margin: 1.5rem;
+    @include encabezado(1.5rem, 600);
+}
+
+.encabezado-color {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: $bg-color-primary;
+    color: $txt-color-primary;
+
+    @media screen and (min-width: 600px) {
+        background-color: inherit;
+        color: inherit;
+    }
 }
 
 p {
-    margin: 1rem;
+    margin: 0.5rem;
 }

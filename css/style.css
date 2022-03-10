@@ -75,7 +75,7 @@ p {
   color: #f5ebeb;
 }
 
-.tarjeta .cuerpo-tarjeta, .formulario form, main {
+.tarjeta .cuerpo-tarjeta, .contenido-contacto .formulario form, main {
   display: flex;
   flex-direction: column;
 }
@@ -226,6 +226,9 @@ main {
   margin: 10px auto;
   border-top: 1px solid black;
 }
+.main-recetas .seccion-encabezado-receta .seccion-mitad:last-of-type {
+  border-bottom: 1px solid black;
+}
 @media screen and (min-width: 600px) {
   .main-recetas .seccion-encabezado-receta .seccion-mitad {
     width: 40%;
@@ -246,6 +249,9 @@ main {
   padding: 0.5rem;
   margin: 10px auto;
   border-top: 1px solid black;
+}
+.main-recetas .seccion-encabezado-receta .seccion-tercio:last-of-type {
+  border-bottom: 1px solid black;
 }
 @media screen and (min-width: 600px) {
   .main-recetas .seccion-encabezado-receta .seccion-tercio {
@@ -286,6 +292,9 @@ main {
   margin: 10px auto;
   border-top: 1px solid black;
 }
+.main-recetas .seccion-pasos-receta .seccion-tercio:last-of-type {
+  border-bottom: 1px solid black;
+}
 @media screen and (min-width: 600px) {
   .main-recetas .seccion-pasos-receta .seccion-tercio {
     width: 30%;
@@ -309,6 +318,9 @@ main {
   padding: 0.5rem;
   margin: 10px auto;
   border-top: 1px solid black;
+}
+.main-recetas .seccion-pasos-receta .seccion-mitad:last-of-type {
+  border-bottom: 1px solid black;
 }
 @media screen and (min-width: 600px) {
   .main-recetas .seccion-pasos-receta .seccion-mitad {
@@ -357,26 +369,41 @@ main {
   }
 }
 
-iframe {
+.contenido-contacto .seccion-principal-contenido .seccion-mitad {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 10px auto;
+  border-top: 1px solid black;
+}
+.contenido-contacto .seccion-principal-contenido .seccion-mitad:last-of-type {
+  border-bottom: 1px solid black;
+}
+@media screen and (min-width: 600px) {
+  .contenido-contacto .seccion-principal-contenido .seccion-mitad {
+    width: 40%;
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+.contenido-contacto .seccion-principal-contenido .seccion-mitad iframe {
   width: 90%;
   max-width: 100%;
   height: 400px;
   margin: 10px;
 }
-
-.formulario {
+.contenido-contacto .formulario {
   margin: 20px;
 }
-.formulario form {
+.contenido-contacto .formulario form {
   width: 80%;
   max-width: 100%;
   margin: 20px auto;
 }
-.formulario form input, .formulario form textarea {
+.contenido-contacto .formulario form input, .contenido-contacto .formulario form textarea {
   margin-top: 20px;
 }
 @media (min-width: 600px) {
-  .formulario form {
+  .contenido-contacto .formulario form {
     width: 400px;
   }
 }

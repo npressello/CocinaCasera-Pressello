@@ -2,9 +2,10 @@
     .seccion-principal-contenido {
         .seccion-mitad {
             @include columna-contenido(40%);
+            width: 90%;
 
             iframe {    
-                width: 80%;
+                width: 90%;
                 height: 400px;    
                 margin: 10px 0;
             }

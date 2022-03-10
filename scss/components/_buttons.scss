@@ -1,3 +1,4 @@
+/* Estilo de botones generales */
 .btn-pagina {
     @extend %brand-color-primary;
     padding: 10px;
@@ -8,3 +9,4 @@
         @extend %brand-color-secondary;
     }
 }
+/* Fin Estilo de botones generales */

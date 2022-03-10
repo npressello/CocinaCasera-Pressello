@@ -1,3 +1,4 @@
+/* Estilo de Header */
 header {
     @extend %brand-color-primary;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
@@ -39,3 +40,4 @@ header {
         justify-content: space-between;
     }
 }
+/* Fin Estilo de Header */

@@ -374,6 +374,7 @@ main {
   padding: 0.5rem;
   margin: 10px auto;
   border-top: 1px solid black;
+  width: 90%;
 }
 .contenido-contacto .seccion-principal-contenido .seccion-mitad:last-of-type {
   border-bottom: 1px solid black;
@@ -386,7 +387,7 @@ main {
   }
 }
 .contenido-contacto .seccion-principal-contenido .seccion-mitad iframe {
-  width: 80%;
+  width: 90%;
   height: 400px;
   margin: 10px 0;
 }

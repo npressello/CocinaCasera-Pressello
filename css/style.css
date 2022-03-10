@@ -22,28 +22,47 @@ ul, ol {
   font-weight: 900;
   line-height: 1;
   font-size: 2rem;
-  margin: 20px;
+  margin: 1.5rem;
 }
 
 h2 {
   font-weight: 800;
   line-height: 1;
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 1.5rem;
 }
 
 h3 {
   font-weight: 700;
   line-height: 1;
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 1.5rem;
 }
 
 h4 {
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
-  margin: 20px;
+  margin: 1.5rem;
+}
+
+.encabezado-color {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #229FB5;
+  color: #f5ebeb;
+}
+@media screen and (min-width: 600px) {
+  .encabezado-color {
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+p {
+  margin: 0.5rem;
 }
 
 .btn-pagina, footer, header {
@@ -201,43 +220,141 @@ main {
   }
 }
 
-.seccion-tercio {
-  width: 90%;
-  padding: 2%;
+.main-recetas .seccion-encabezado-receta .seccion-mitad {
+  width: 100%;
+  padding: 0.5rem;
   margin: 10px auto;
-  border: 1px solid gray;
+  border-top: 1px solid black;
 }
 @media screen and (min-width: 600px) {
-  .seccion-tercio {
-    width: 30%;
-  }
-}
-.seccion-tercio .texto-descripcion-receta {
-  margin: 20px auto;
-}
-
-.seccion-ingredientes {
-  line-height: 1.6;
-  text-align: left;
-}
-.seccion-ingredientes ul {
-  margin: 10px 5px;
-}
-
-.seccion-mitad {
-  width: 90%;
-  padding: 2%;
-  margin: 10px auto;
-  border: 1px solid gray;
-}
-@media screen and (min-width: 600px) {
-  .seccion-mitad {
+  .main-recetas .seccion-encabezado-receta .seccion-mitad {
     width: 40%;
+    padding: 0;
+    border: 1px solid black;
   }
 }
-.seccion-mitad .descripcion-receta {
+.main-recetas .seccion-encabezado-receta .seccion-mitad .texto-descripcion-receta {
+  margin: 1rem auto;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-encabezado-receta .seccion-mitad .texto-descripcion-receta {
+    margin: 2rem auto;
+  }
+}
+.main-recetas .seccion-encabezado-receta .seccion-tercio {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 10px auto;
+  border-top: 1px solid black;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-encabezado-receta .seccion-tercio {
+    width: 30%;
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+.main-recetas .seccion-encabezado-receta .seccion-tercio .texto-descripcion-receta {
+  margin: 1rem auto;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-encabezado-receta .seccion-tercio .texto-descripcion-receta {
+    margin: 2rem auto;
+  }
+}
+.main-recetas .seccion-encabezado-receta .seccion-ingredientes {
   line-height: 1.6;
   text-align: left;
+}
+.main-recetas .seccion-encabezado-receta .seccion-ingredientes h3 {
+  text-align: center;
+}
+.main-recetas .seccion-encabezado-receta .seccion-ingredientes ul {
+  margin: 1rem 2rem;
+}
+.main-recetas .seccion-pasos-receta {
+  margin-top: 5rem;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-pasos-receta h3 {
+    width: 100%;
+  }
+}
+.main-recetas .seccion-pasos-receta .seccion-tercio {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 10px auto;
+  border-top: 1px solid black;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-pasos-receta .seccion-tercio {
+    width: 30%;
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+.main-recetas .seccion-pasos-receta .seccion-tercio .descripcion-receta {
+  margin: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.main-recetas .seccion-pasos-receta .seccion-tercio .descripcion-receta ol li {
+  margin-bottom: 1rem;
+}
+.main-recetas .seccion-pasos-receta .seccion-tercio .descripcion-receta ul li {
+  margin-bottom: 1rem;
+}
+.main-recetas .seccion-pasos-receta .seccion-mitad {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 10px auto;
+  border-top: 1px solid black;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .seccion-pasos-receta .seccion-mitad {
+    width: 45%;
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+.main-recetas .seccion-pasos-receta .seccion-mitad .descripcion-receta {
+  margin: 1rem;
+  line-height: 1.6;
+  text-align: left;
+}
+.main-recetas .seccion-pasos-receta .seccion-mitad .descripcion-receta ol li {
+  margin-bottom: 1rem;
+}
+.main-recetas .seccion-pasos-receta .seccion-mitad .descripcion-receta ul li {
+  margin-bottom: 1rem;
+}
+.main-recetas .nav-recetas-flotante {
+  position: fixed;
+  background-color: #229FB5;
+  opacity: 0.95;
+  right: 0;
+}
+.main-recetas .nav-recetas-flotante nav ul {
+  margin: 0;
+  list-style-position: inside;
+  list-style: none;
+}
+.main-recetas .nav-recetas-flotante nav ul li {
+  border: 1px solid #30b2c9;
+}
+.main-recetas .nav-recetas-flotante nav ul li a {
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #f5ebeb;
+  writing-mode: tb-rl;
+}
+.main-recetas .nav-recetas-flotante nav ul li:hover {
+  background-color: #30b2c9;
+}
+@media screen and (min-width: 600px) {
+  .main-recetas .nav-recetas-flotante {
+    display: none;
+  }
 }
 
 iframe {
@@ -290,7 +407,7 @@ iframe {
 }
 .nav-tipo-recetas ul li a p {
   display: inline-block;
-  margin-top: 5px;
+  margin: 0.5rem 0 0.5rem 0;
   font-size: 0.7rem;
 }
 @media screen and (min-width: 600px) {
@@ -319,6 +436,7 @@ iframe {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
   overflow: hidden;
+  background-color: white;
 }
 .tarjeta .imagen-tarjeta {
   width: 30%;
@@ -328,7 +446,7 @@ iframe {
 @media screen and (min-width: 600px) {
   .tarjeta .imagen-tarjeta {
     width: 100%;
-    height: 200px;
+    height: 12.5rem;
   }
 }
 .tarjeta .cuerpo-tarjeta {
@@ -344,23 +462,38 @@ iframe {
 }
 .tarjeta .cuerpo-tarjeta .titulo-tarjeta-receta {
   font-size: 1.1rem;
+  margin: auto 1rem;
 }
 @media screen and (min-width: 600px) {
   .tarjeta .cuerpo-tarjeta .titulo-tarjeta-receta {
     font-size: 1.4rem;
+    margin: 0.5rem;
   }
 }
 .tarjeta .cuerpo-tarjeta .texto-tarjeta {
   display: block;
   display: -webkit-box;
   width: auto;
-  margin: auto 20px 30px 20px;
+  margin: auto 1.5rem auto 1.5rem;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   max-height: 40px;
   -webkit-line-clamp: 2;
   font-size: 0.8rem;
+}
+@media screen and (min-width: 600px) {
+  .tarjeta .cuerpo-tarjeta .texto-tarjeta {
+    margin: 1rem;
+  }
+}
+.tarjeta .cuerpo-tarjeta .btn-tarjeta {
+  margin: auto 1rem;
+}
+@media screen and (min-width: 600px) {
+  .tarjeta .cuerpo-tarjeta .btn-tarjeta {
+    margin: 0.5rem;
+  }
 }
 .tarjeta:hover {
   transform: scale(1.02);

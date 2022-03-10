@@ -14,7 +14,7 @@
 
     <!-- Open graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Oi Sobagi - Cocina Casera - Las mejores resetas de la web">
+    <meta property="og:title" content="Oi Sobagi - Cocina Casera - Las mejores recetas de la web">
     <meta property="og:url" content="https://clever-swartz-3100d4.netlify.app/pages/oi-sobagi.html">
     <meta property="og:image" content="https://clever-swartz-3100d4.netlify.app/images/oi-sobagi.jpg">
 
@@ -26,7 +26,7 @@
 <body>
     <div class="page-wrapper">
         <!-- Header -->
-        <header>
+        <header id="header">
 
             <!-- Nav Bar -->
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -70,71 +70,77 @@
         <!-- Fin Banner principal / Titulo / Descripcion -->
 
         <!-- Seccion central -->
-        <main>           
+        <main class="main-recetas">
 
-            <!-- Seccion Central receta -->
-            <section>
+            <!-- Seccion encabezado e Ingredientes -->
+            <section class="seccion-encabezado-receta seccion-principal-contenido">
 
-                <!-- Seccion encabezado e Ingredientes -->
-                <section class="seccion-principal-contenido">
+                <!-- Encabezado de receta -->
+                <div class="seccion-mitad">
+                    <h1 class="main-titulo">Oi sobagi</h1>
+                    <img src="../images/oi-sobagi.jpg" alt="oi-sobagi">              
+                    <p class="texto-descripcion-receta">Este no es un plato principal, sino un banchan (acompañamiento) que se sirve con otros platos.</p>
+                </div>
+                <!-- Fin Encabezado de receta-->
 
-                    <!-- Encabezado de receta -->
-                    <div class="seccion-mitad">
-                        <h1 class="main-titulo">Oi sobagi</h1>
-                        <img src="../images/oi-sobagi.jpg" alt="oi-sobagi">              
-                        <p class="texto-descripcion-receta">Este no es un plato principal, sino un banchan (acompañamiento) que se sirve con otros platos.</p>
-                    </div>
-                    <!-- Fin Encabezado de receta-->
-
-                    <!-- Zona Div de ingredientes -->
-                    <div class="seccion-mitad seccion-ingredientes">
-                        <h3>Ingredientes:</h3>
-                        <ul>
-                            <li>Oi (pepino coreano): 5 unidades</li>
-                            <li>Buchu (cebollín coreano): 100 gr.</li>
-                            <li>Cebolla de verdeo: 2 unidades</li>
-                            <li>Ajo: 2 dientes</li>
-                            <li>Cebolla: 1/2 unidad</li>
-                            <li>Gochugaru molido grueso (ají molido picante): 3 cucharas de té</li>
-                            <li>Sal: una pizca</li>
-                            <li>Sal parrillera: 1/2 taza</li>
-                            <li>Azúcar: 1 cuchara de té</li>
-                        </ul>
-                    </div>
-                    <!-- Fin Zona Div de ingredientes-->
-
-                </section>
-                <!-- Fin Seccion encabezado e Ingredientes-->
-                
-                <!-- Seccion pasos de receta -->
-                <h3>Pasos</h3>
-                <section class="seccion-principal-contenido">
-
-                    <!-- Bloque paso individual de receta -->
-                    <div class="seccion-mitad">
-                        <img src="../images/oi-sobagi-2.jpg" alt="presentacion plato oi sobagi">
-                        <div class="descripcion-receta">                        
-                            <ol>
-                                <li>Cortar el oi en trozos de 5 cm. aproximadamente</li>
-                                <li>Cortar el trozo de oi longitudinalmente en forma de cruz sin llegar al fondo (el pepino queda como una flor abierta).</li>
-                                <li>Macerar el oi en sal parrillera (preferentemente) durante dos horas. Revolver regularmente el recipiente para que quede bien macerado.</li>
-                                <li>Lavar en agua, colar y reservar.</li>
-                                <li>Cortar la cebolla, el buchu y la cebolla de verdeo en cubos pequeños.</li>
-                                <li>Mezclar las verduras cortadas con el ajo picado, pizca de sal, azúcar y el gochugaru.</li>
-                                <li>Rellenar el oi con la mezcla de condimentos... y ¡listo para servir!</li>
-                            </ol>
-                        </div>                        
-                    </div>
-                    <!-- Fin Bloque paso individual de receta -->
-                    
-                </section>
-                <!-- Fin Seccion pasos de receta -->
+                <!-- Zona Div de ingredientes -->
+                <div class="seccion-mitad seccion-ingredientes">
+                    <h3 class="encabezado-color" id="ingredientes">Ingredientes</h3>
+                    <ul>
+                        <li>Oi (pepino coreano): 5 unidades</li>
+                        <li>Buchu (cebollín coreano): 100 gr.</li>
+                        <li>Cebolla de verdeo: 2 unidades</li>
+                        <li>Ajo: 2 dientes</li>
+                        <li>Cebolla: 1/2 unidad</li>
+                        <li>Gochugaru molido grueso (ají molido picante): 3 cucharas de té</li>
+                        <li>Sal: una pizca</li>
+                        <li>Sal parrillera: 1/2 taza</li>
+                        <li>Azúcar: 1 cuchara de té</li>
+                    </ul>
+                </div>
+                <!-- Fin Zona Div de ingredientes-->
 
             </section>
-            <!--- Fin Seccion Central receta -->       
+            <!-- Fin Seccion encabezado e Ingredientes-->
+            
+            <!-- Seccion pasos de receta -->
+            <section class="seccion-pasos-receta seccion-principal-contenido">
+                <h3 class="encabezado-color" id="pasos-receta">Pasos</h3> 
+
+                <!-- Bloque paso individual de receta -->
+                <div class="seccion-mitad">
+                    <img src="../images/oi-sobagi-2.jpg" alt="presentacion plato oi sobagi">
+                    <div class="descripcion-receta">                        
+                        <ol>
+                            <li>Cortar el oi en trozos de 5 cm. aproximadamente</li>
+                            <li>Cortar el trozo de oi longitudinalmente en forma de cruz sin llegar al fondo (el pepino queda como una flor abierta).</li>
+                            <li>Macerar el oi en sal parrillera (preferentemente) durante dos horas. Revolver regularmente el recipiente para que quede bien macerado.</li>
+                            <li>Lavar en agua, colar y reservar.</li>
+                            <li>Cortar la cebolla, el buchu y la cebolla de verdeo en cubos pequeños.</li>
+                            <li>Mezclar las verduras cortadas con el ajo picado, pizca de sal, azúcar y el gochugaru.</li>
+                            <li>Rellenar el oi con la mezcla de condimentos... y ¡listo para servir!</li>
+                        </ol>
+                    </div>                        
+                </div>
+                <!-- Fin Bloque paso individual de receta -->
+                
+            </section>
+            <!-- Fin Seccion pasos de receta -->   
+
+            <!-- Navegador flotante -->
+            <aside class="nav-recetas-flotante">
+                <nav>
+                    <ul>
+                        <li><a href="#header">Subir</a></li>
+                        <li><a href="#ingredientes">Ingredientes</a></li>
+                        <li><a href="#pasos-receta">Pasos</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <!-- Navegador flotante -->
 
         </main>
-        <!-- Fin Seccion central -->
+        <!-- Fin Fin Seccion central -->
 
         <!-- Pie de pagina -->
         <footer>

@@ -386,17 +386,15 @@ main {
   }
 }
 .contenido-contacto .seccion-principal-contenido .seccion-mitad iframe {
-  width: 90%;
-  max-width: 100%;
+  width: 80%;
   height: 400px;
-  margin: 10px;
+  margin: 10px 0;
 }
 .contenido-contacto .formulario {
-  margin: 20px;
+  margin: 20px 0;
 }
 .contenido-contacto .formulario form {
   width: 80%;
-  max-width: 100%;
   margin: 20px auto;
 }
 .contenido-contacto .formulario form input, .contenido-contacto .formulario form textarea {

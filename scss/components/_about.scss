@@ -4,20 +4,18 @@
             @include columna-contenido(40%);
 
             iframe {    
-                width: 90%;
-                max-width: 100%;
+                width: 80%;
                 height: 400px;    
-                margin: 10px;
+                margin: 10px 0;
             }
         }
     }
 
     .formulario {
-        margin: 20px;
+        margin: 20px 0;
         form {        
             @extend %flex-column;
             width: 80%;
-            max-width: 100%;
             margin: 20px auto;        
     
             input, textarea {

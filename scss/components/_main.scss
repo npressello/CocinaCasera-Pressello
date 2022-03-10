@@ -1,15 +1,12 @@
 /* Estilos Banner Principal */
-
 .banner-principal {
     text-align: center;
     width: 100%;
     padding: 10px;
 }
-
 /* Fin Estilos Banner Principal */
 
 /* Estilos Main Generales */
-
 main {
     @extend %flex-column;
     text-align: center;
@@ -45,8 +42,4 @@ main {
         width: 60%;
     }
 }
-
-
-
-
 /* Fin Estilos Main Generales */

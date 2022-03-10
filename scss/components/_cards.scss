@@ -1,3 +1,4 @@
+/* Estilo de tarjetas del index */
 .tarjeta {
     @extend %flex-row;
     width: 100%;
@@ -79,3 +80,4 @@
         height: 400px;        
     }
 }
+/* Fin Estilo de tarjetas del index */

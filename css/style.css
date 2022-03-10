@@ -85,6 +85,7 @@ p {
   flex-direction: row;
 }
 
+/* Estilo de layout general */
 .page-wrapper {
   display: grid;
   grid-template-areas: "header" "banner" "main" "footer";
@@ -102,6 +103,8 @@ p {
   grid-area: footer;
 }
 
+/* Fin Estilo de layout general */
+/* Estilo de Header */
 header {
   box-shadow: 0 0 3em rgba(0, 0, 0, 0.1);
 }
@@ -131,6 +134,8 @@ header .navbar .navbar-collapse .nav-item:hover {
     justify-content: space-between;
   }
 }
+/* Fin Estilo de Header */
+/* Estilo de Footer */
 footer {
   width: 100%;
   padding: 0;
@@ -154,6 +159,7 @@ footer .iconos-sociales a img {
   width: 24px;
 }
 
+/* Fin Estilo de Footer */
 /* Estilos Banner Principal */
 .banner-principal {
   text-align: center;
@@ -202,6 +208,7 @@ main {
 }
 
 /* Fin Estilos Main Generales */
+/* Estilo especifico de index*/
 @media screen and (min-width: 992px) {
   .contenido-home {
     width: 80%;
@@ -220,6 +227,8 @@ main {
   }
 }
 
+/* Fin Estilo especifico de index*/
+/* Estilos especificos de las paginas de recetas */
 .main-recetas .seccion-encabezado-receta .seccion-mitad {
   width: 100%;
   padding: 0.5rem;
@@ -369,6 +378,8 @@ main {
   }
 }
 
+/* Fin Estilos especificos de las paginas de recetas */
+/* Estilos personalizados de pagina Contacto */
 .contenido-contacto .seccion-principal-contenido .seccion-mitad {
   width: 100%;
   padding: 0.5rem;
@@ -407,11 +418,14 @@ main {
   }
 }
 
+/* Fin Estilos personalizados de pagina Contacto */
+/* Estilo de botones generales */
 .btn-pagina {
   padding: 10px;
   border-radius: 0.35em;
   text-decoration: none;
 }
+/* Fin Estilo de botones generales */
 /* Estilos de la barra de navegacion secundaria */
 /* En pantalla chica se muestra antes que las tarjetas */
 /* En pantalla grande se muestra a la derecha de las tarjetas */
@@ -453,6 +467,8 @@ main {
   }
 }
 
+/* Fin Estilos de la barra de navegacion secundaria */
+/* Estilo de tarjetas del index */
 .tarjeta {
   width: 100%;
   height: 180px;
@@ -532,5 +548,7 @@ main {
     height: 400px;
   }
 }
+
+/* Fin Estilo de tarjetas del index */
 
 /*# sourceMappingURL=style.css.map */

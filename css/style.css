@@ -182,7 +182,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 992px) {
@@ -218,12 +218,7 @@ main {
 }
 @media screen and (min-width: 1400px) {
   .contenido-home {
-    width: 70%;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .contenido-home {
-    width: 60%;
+    width: 1000px;
   }
 }
 
@@ -458,7 +453,7 @@ main {
 @media screen and (min-width: 992px) {
   .nav-tipo-recetas ul {
     flex-direction: column;
-    margin: 10px auto;
+    margin: 10px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -470,10 +465,10 @@ main {
 /* Fin Estilos de la barra de navegacion secundaria */
 /* Estilo de tarjetas del index */
 .tarjeta {
-  width: 100%;
+  max-width: 100%;
   height: 180px;
-  margin: 10px auto;
-  border-radius: 0.5em;
+  margin: 5px;
+  border-radius: 0.125em;
   border: 1px solid gray;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
   transition: all 0.5s;
